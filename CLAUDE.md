@@ -10,7 +10,7 @@
 - Cron job execution — missed, late, or failed
 - Per-job duration trends and anomaly detection
 
-**Domain:** cronsentinel.io (to be registered)
+**Domain:** crontinel.com ✅ (registered)
 **Target market:** Laravel developers running Horizon + background jobs in production
 **Pricing anchor:** Cronitor charges $2/monitor/month with 100K+ devs — we target the same market with deeper Laravel-native insight
 **Moat:** Generic monitors only check if a job pinged back. We see Horizon internals. Forge covers the surface — we go deeper.
