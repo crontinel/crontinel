@@ -1,0 +1,6 @@
+oss/
+crontinel-landing/
+crontinel-app/
+node_modules/
+.env
+.env.local
