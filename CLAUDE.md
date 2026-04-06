@@ -7,15 +7,15 @@ This is the root of the Crontinel workstream. All active repos live as subdirect
 | Directory | Repo | Description |
 |---|---|---|
 | `oss/` | `HarunRRayhan/crontinel` | MIT Laravel package — ships to Packagist |
-| `crontinel-landing/` | `HarunRRayhan/crontinel-landing` | Astro landing page (crontinel.com) |
-| `crontinel-app/` | `HarunRRayhan/crontinel-app` (private, TBD) | SaaS application |
+| `landing/` | `HarunRRayhan/crontinel-landing` | Astro landing page (crontinel.com) |
+| `app/` | `HarunRRayhan/crontinel-app` (private, TBD) | SaaS application |
 
 ## Working across repos
 
 ```bash
-cd oss/               # OSS package work
-cd crontinel-landing/ # Landing page work
-cd crontinel-app/     # SaaS app work (when created)
+cd oss/      # OSS package work
+cd landing/  # Landing page work
+cd app/      # SaaS app work (when created)
 ```
 
 Each subdirectory has its own `.git` and its own `CLAUDE.md` — read it before working there.
