@@ -6,9 +6,9 @@ This is the root of the Crontinel workstream. All active repos live as subdirect
 
 | Directory | Repo | Description |
 |---|---|---|
-| `oss/` | `HarunRRayhan/crontinel` | MIT Laravel package — ships to Packagist |
-| `landing/` | `HarunRRayhan/crontinel-landing` | Astro landing page (crontinel.com) |
-| `app/` | `HarunRRayhan/crontinel-app` (private, TBD) | SaaS application |
+| `oss/` | `crontinel/oss` | MIT Laravel package — ships to Packagist |
+| `landing/` | `crontinel/landing` | Astro landing page (crontinel.com) |
+| `app/` | `crontinel/app` (private) | SaaS application |
 
 ## Working across repos
 
