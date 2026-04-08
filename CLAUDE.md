@@ -6,7 +6,7 @@
 
 ## Scope of this repo
 
-`harunrrayhan/crontinel` — MIT Laravel package. Ships to Packagist.
+`crontinel/laravel` — MIT Laravel package. Ships to Packagist.
 SaaS app is at `~/Work/crontinel/app` (private repo, TBD).
 Landing page is at `~/Work/crontinel/landing`.
 

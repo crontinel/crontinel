@@ -580,7 +580,7 @@ Paginated cron run history.
 5. Step 1: Create team — enter team name
 6. Step 2: Create first app — enter app name, select timezone
 7. Step 3: Install — shown:
-     composer require harunrrayhan/crontinel
+     composer require crontinel/laravel
      php artisan crontinel:install --saas-key={api_key}
 8. Dashboard loads, shows "Waiting for first ping..."
 9. When first ping arrives, dashboard updates live (Livewire polling)
@@ -590,7 +590,7 @@ Paginated cron run history.
 ### 8.2 Package installation (self-hosted)
 
 ```
-1. composer require harunrrayhan/crontinel
+1. composer require crontinel/laravel
 2. php artisan crontinel:install
    - Publishes config/crontinel.php
    - Runs migrations (creates crontinel_runs table)
@@ -850,7 +850,7 @@ UI shows upgrade prompts when limit reached — never hard errors without explan
 
 ### 12.1 Package identity
 
-- **Composer name:** `harunrrayhan/crontinel`
+- **Composer name:** `crontinel/laravel`
 - **Namespace:** `Crontinel\`
 - **Laravel auto-discovery:** Yes (`CrontinelServiceProvider`)
 - **Min requirements:** PHP 8.2+, Laravel 11+
@@ -943,7 +943,7 @@ If `CRONTINEL_API_KEY` is set:
 
 **OSS callout:**
 - "Also available as a free, open-source Laravel package"
-- `composer require harunrrayhan/crontinel`
+- `composer require crontinel/laravel`
 - GitHub stars badge
 
 **Footer:**
@@ -986,7 +986,7 @@ Competitors to create: `cronitor`, `better-stack`, `oh-dear`, `forge-heartbeats`
 
 ### Milestone 1 — OSS Package MVP (2–3 weeks)
 **Done when:**
-- [ ] `composer require harunrrayhan/crontinel` installs cleanly on fresh Laravel 11 + 12
+- [ ] `composer require crontinel/laravel` installs cleanly on fresh Laravel 11 + 12
 - [ ] `php artisan crontinel:install` publishes config + runs migrations
 - [ ] Dashboard at `/crontinel` loads in browser with dark theme
 - [ ] HorizonMonitor returns correct status when Horizon is running

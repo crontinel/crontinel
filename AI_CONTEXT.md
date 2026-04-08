@@ -9,7 +9,7 @@
 ## What this repo is
 
 **Crontinel** (`crontinel.com`) — Laravel-native Cron & Queue monitoring.
-- OSS MIT package (`harunrrayhan/crontinel` on Packagist) + hosted SaaS at `app.crontinel.com`
+- OSS MIT package (`crontinel/laravel` on Packagist) + hosted SaaS at `app.crontinel.com`
 - Monitors Laravel Horizon internals, queue depth, failed jobs, and cron job execution
 - The moat: generic monitors check if a job pinged back. Crontinel reads Horizon internals.
 

@@ -113,7 +113,7 @@ sudo mv composer.phar /usr/local/bin/composer
 
 ### Packagist
 - [ ] Create Packagist account (or use existing)
-- [ ] Submit `harunrrayhan/crontinel` package
+- [ ] Submit `crontinel/laravel` package
 - [ ] Set up GitHub webhook for auto-update on push
 
 ### npm (for MCP server)
