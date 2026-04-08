@@ -32,9 +32,9 @@
 
 | Repo | Visibility | Purpose |
 |---|---|---|
-| `github.com/HarunRRayhan/crontinel` | Public (MIT) | OSS Laravel package |
-| `github.com/HarunRRayhan/crontinel-app` | Private | SaaS app (Laravel 12) |
-| `github.com/HarunRRayhan/crontinel-landing` | Public (or Private TBD) | Astro landing page |
+| `github.com/crontinel/oss` | Public (MIT) | OSS Laravel package |
+| `github.com/crontinel/app` | Private | SaaS app (Laravel 12) |
+| `github.com/crontinel/landing` | Public | Astro landing page |
 
 OSS package repo is public from day one — it's the distribution engine. SaaS app is private. Landing page repo visibility TBD (no sensitive data in it).
 

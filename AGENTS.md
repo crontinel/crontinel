@@ -15,4 +15,4 @@
 - Product: Crontinel (crontinel.com) — Laravel Cron & Queue monitoring
 - Namespace: `Crontinel\` | Commands: `crontinel:*` | DB table: `crontinel_runs`
 - Primary dev channel: Claude Code via OpenClaw (Telegram → OpenClaw → claude CLI)
-- Repo: github.com/HarunRRayhan/crontinel | Local: ~/Work/crontinel
+- Repo: github.com/crontinel/oss | Local: ~/Work/crontinel/oss

@@ -23,8 +23,8 @@ These are the things that **require direct computer access or manual account wor
 - [ ] Connect both to GitHub repo
 
 ### GitHub
-- [ ] Create private repo: `github.com/HarunRRayhan/crontinel-app` (SaaS app)
-- [ ] Create repo: `github.com/HarunRRayhan/crontinel-landing` (or keep in crontinel monorepo TBD)
+- [ ] Create private repo: `github.com/crontinel/app` (SaaS app)
+- [ ] Create repo: `github.com/crontinel/landing` (Astro landing page)
 - [ ] Add GitHub Actions secrets:
   - `AWS_ACCESS_KEY_ID` + `AWS_SECRET_ACCESS_KEY` (deploy user)
   - `APP_KEY` (Laravel production key)

@@ -1128,9 +1128,9 @@ Competitors to create: `cronitor`, `better-stack`, `oh-dear`, `forge-heartbeats`
 
 | Repo | Visibility | Contents |
 |---|---|---|
-| `HarunRRayhan/crontinel` | Public | OSS Laravel package |
-| `HarunRRayhan/crontinel-app` | Private | SaaS app (Laravel 12) |
-| `HarunRRayhan/crontinel-landing` | TBD | Astro landing page |
+| `crontinel/oss` | Public | OSS Laravel package |
+| `crontinel/app` | Private | SaaS app (Laravel 12) |
+| `crontinel/landing` | Public | Astro landing page |
 
 ### 15.2 Branch strategy
 

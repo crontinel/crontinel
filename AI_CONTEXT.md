@@ -14,8 +14,8 @@
 - The moat: generic monitors check if a job pinged back. Crontinel reads Horizon internals.
 
 **Repos:**
-- OSS package: `~/Work/crontinel` → `github.com/HarunRRayhan/crontinel` (public)
-- SaaS app: `~/Work/crontinel-app` → `github.com/HarunRRayhan/crontinel-app` (private)
+- OSS package: `~/Work/crontinel/oss` → `github.com/crontinel/oss` (public)
+- SaaS app: `~/Work/crontinel/app` → `github.com/crontinel/app` (private)
 - OSS symlinked at: `~/.openclaw/workspace/projects/crontinel`
 
 **Full specs:** See `PRD.md` (product requirements, v1.3) and `ARCHITECTURE.md` (all decisions).
