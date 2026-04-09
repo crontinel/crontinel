@@ -1,4 +1,4 @@
-# Crontinel — Before-Launch Checklist
+# Crontinel  -  Before-Launch Checklist
 
 Last updated: 2026-04-08
 Based on: ONBOARDING_AUDIT.md, DNS_AUDIT.md, PRICING.md, RELEASE.md, WAITLIST.md, WAITLIST_FALLBACK.md, app/docs/server-setup.md
@@ -10,11 +10,11 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 ## 1. Product
 
 ### App Features
-- [ ] `P0` Registration page is accessible without a waitlist gate — all "Start free" and "Start 14-day trial" pricing buttons link to `/register`, not `/#waitlist`
+- [ ] `P0` Registration page is accessible without a waitlist gate  -  all "Start free" and "Start 14-day trial" pricing buttons link to `/register`, not `/#waitlist`
 - [ ] `P0` Free tier works end-to-end: register → onboard → install OSS package → see first ping on dashboard
 - [ ] `P0` 14-day Pro trial starts automatically on registration (no CC required); `TrialExpiredMail` fires at expiry and drops plan to Free
 - [ ] `P0` `PlanLimits::canCreateApp()` returns a clear upgrade prompt UI when limit is hit (not a silent failure)
-- [ ] `P1` GitHub OAuth registration added (developer tool — GitHub OAuth reduces signup friction significantly)
+- [ ] `P1` GitHub OAuth registration added (developer tool  -  GitHub OAuth reduces signup friction significantly)
 - [ ] `P1` Registration form (`register.blade.php`) styled to match the dark slate theme, not Breeze default light theme
 - [ ] `P1` Dashboard empty-state copy does not repeat install instructions verbatim after onboarding completion; shows a distinct "Waiting for first ping..." state
 - [ ] `P2` Stripe products and prices created: Pro Monthly ($19), Pro Yearly ($182), Team Monthly ($49), Team Yearly ($470)
@@ -37,13 +37,13 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 
 ## 2. Package Distribution
 
-### Packagist — `crontinel/php`
+### Packagist  -  `crontinel/php`
 - [ ] `P0` `crontinel/php` submitted to Packagist at `https://packagist.org/packages/crontinel/php`
 - [ ] `P0` Stable tag `v0.1.0` pushed to `crontinel/php` GitHub repo so Packagist registers a stable version
 - [ ] `P0` GitHub webhook installed in `crontinel/php` repo → Packagist (URL: `https://packagist.org/api/github?username=<packagist-user>`, events: push)
 - [ ] `P0` `composer require crontinel/php` succeeds in a clean Laravel project with default `minimum-stability: stable`
 
-### Packagist — `crontinel/laravel`
+### Packagist  -  `crontinel/laravel`
 - [ ] `P0` `"crontinel/php": "@dev"` replaced with `"crontinel/php": "^0.1.0"` in `oss/composer.json`
 - [ ] `P0` `repositories` path-repo block removed from `oss/composer.json`
 - [ ] `P0` `oss/composer.lock` updated and committed after constraint change
@@ -53,7 +53,7 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 - [ ] `P1` GitHub badges in OSS README point to the correct repo (`crontinel/crontinel`, not `crontinel/laravel`)
 - [ ] `P1` `crontinel/php` and `crontinel/laravel` repos are both public in the `crontinel` GitHub org
 
-### npm — `@crontinel/mcp-server`
+### npm  -  `@crontinel/mcp-server`
 - [ ] `P1` `@crontinel` npm org exists; account is a member (`npm org ls crontinel`)
 - [ ] `P1` `npm version 0.1.0` run in `mcp-server/`; `npm publish --access public` succeeds
 - [ ] `P1` `npm view @crontinel/mcp-server version` returns `0.1.0`
@@ -69,7 +69,7 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 - [ ] `P0` Resend domain `crontinel.com` verified under Resend dashboard → Domains
 - [ ] `P0` "Crontinel Waitlist" audience created in Resend; Audience ID matches env var
 - [ ] `P0` Smoke test passes: fresh email submitted on `crontinel.com` appears as contact in Resend audience within 30 seconds
-- [ ] `P0` `subscribe.ts` returns HTTP 503 with `{ unavailable: true }` when env vars are missing (stop silent fake-success — see WAITLIST_FALLBACK.md)
+- [ ] `P0` `subscribe.ts` returns HTTP 503 with `{ unavailable: true }` when env vars are missing (stop silent fake-success  -  see WAITLIST_FALLBACK.md)
 
 ### Fallback
 - [ ] `P1` Tally.so (or equivalent) fallback form created and URL ready to embed in the `unavailable` error state
@@ -82,14 +82,14 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 - [ ] `P1` OSS vs. SaaS distinction is explained clearly on the landing page (what the SaaS adds over self-hosted)
 - [ ] `P1` GitHub links in hero/OSS callout resolve to the correct repo (`crontinel/crontinel`, not `crontinel/laravel`)
 - [ ] `P2` Rate limiting or Cloudflare Turnstile added to `/api/subscribe` before any public traffic
-- [ ] `P2` `www.crontinel.com` redirect behavior confirmed (redirect to root or identical content — pick one)
+- [ ] `P2` `www.crontinel.com` redirect behavior confirmed (redirect to root or identical content  -  pick one)
 
 ---
 
 ## 4. Docs
 
 ### Quick-Start Accuracy
-- [ ] `P0` Quick-start step 3 ("Run migrations") removed or corrected to note that `crontinel:install` runs migrations automatically — no manual `php artisan migrate` needed
+- [ ] `P0` Quick-start step 3 ("Run migrations") removed or corrected to note that `crontinel:install` runs migrations automatically  -  no manual `php artisan migrate` needed
 - [ ] `P0` Quick-start step 4 (visit `/crontinel`) includes a "you should see X" screenshot or description of the empty-state dashboard
 - [ ] `P1` Quick-start includes `php artisan schedule:run` as a required step for cron monitoring to produce data
 - [ ] `P1` Quick-start includes a note: "Not using Horizon? Set `horizon.enabled = false` in `config/crontinel.php`"
@@ -116,7 +116,7 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 ## 5. Onboarding
 
 ### Registration
-- [ ] `P0` `app.crontinel.com` DNS A record created pointing to Hetzner VPS IP (currently missing — DNS_AUDIT.md)
+- [ ] `P0` `app.crontinel.com` DNS A record created pointing to Hetzner VPS IP (currently missing  -  DNS_AUDIT.md)
 - [ ] `P0` Hetzner CX22 VPS provisioned per `app/docs/server-setup.md`; SSL cert issued via certbot
 - [ ] `P0` Registration at `app.crontinel.com/register` loads and submits successfully
 - [ ] `P0` Confirmation email sent on registration (Resend SMTP configured in app `.env`)
@@ -139,14 +139,14 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 ## 6. Alerts / Integrations
 
 ### Working (to verify before launch)
-- [ ] `P0` **Email** — Resend SMTP, `hello@crontinel.com` from address, verified domain; test alert delivers to inbox
-- [ ] `P1` **Slack** — webhook URL stored per-monitor; test alert posts to correct channel
-- [ ] `P1` **Webhook** — POST payload (JSON) delivered to user-configured URL; retry logic on failure
-- [ ] `P2` **PagerDuty** — integration key configured; test incident creates and resolves in PagerDuty
+- [ ] `P0` **Email**  -  Resend SMTP, `hello@crontinel.com` from address, verified domain; test alert delivers to inbox
+- [ ] `P1` **Slack**  -  webhook URL stored per-monitor; test alert posts to correct channel
+- [ ] `P1` **Webhook**  -  POST payload (JSON) delivered to user-configured URL; retry logic on failure
+- [ ] `P2` **PagerDuty**  -  integration key configured; test incident creates and resolves in PagerDuty
 
 ### Planned / Not Yet Live
-- [ ] `P2` **SMS** — not in current feature set; note as "coming soon" in docs if referenced on landing
-- [ ] `P2` **OpsGenie / VictorOps** — document as future roadmap, not launch blockers
+- [ ] `P2` **SMS**  -  not in current feature set; note as "coming soon" in docs if referenced on landing
+- [ ] `P2` **OpsGenie / VictorOps**  -  document as future roadmap, not launch blockers
 
 ### Alert Gating
 - [ ] `P1` Free tier: all alert channels blocked in UI, upgrade prompt shown with "Alerts require Pro" copy
@@ -169,13 +169,13 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 - [ ] `P2` Security/privacy policy page live at `crontinel.com/privacy` before collecting any emails or user data
 
 ### Status / Uptime
-- [ ] `P1` `status.crontinel.com` live (Gatus deployed on Hetzner VPS, DNS A record added) — currently missing per DNS_AUDIT.md
+- [ ] `P1` `status.crontinel.com` live (Gatus deployed on Hetzner VPS, DNS A record added)  -  currently missing per DNS_AUDIT.md
 - [ ] `P1` Status page monitors: `crontinel.com`, `app.crontinel.com`, `docs.crontinel.com`, ingest API endpoint
 - [ ] `P2` Status page linked from landing page footer
 
 ### Billing Trust
 - [ ] `P1` Stripe test mode confirmed off before first real transaction; live keys in production `.env`
-- [ ] `P1` Invoice/receipt email configured in Stripe (Cashier sends these automatically — verify in Stripe dashboard)
+- [ ] `P1` Invoice/receipt email configured in Stripe (Cashier sends these automatically  -  verify in Stripe dashboard)
 
 ---
 
@@ -186,7 +186,7 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 - [ ] `P0` `app.crontinel.com` live and responding HTTPS (no curl errors)
 - [ ] `P0` `docs.crontinel.com` live and responding HTTPS
 - [ ] `P0` Horizon worker running under Supervisor (`supervisorctl status crontinel-horizon:*` shows RUNNING)
-- [ ] `P0` MySQL daily backup cron configured to S3 or Hetzner Object Storage (currently not configured — server-setup.md section 21)
+- [ ] `P0` MySQL daily backup cron configured to S3 or Hetzner Object Storage (currently not configured  -  server-setup.md section 21)
 
 ### GitHub Actions / Deploy
 - [ ] `P1` `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY` secrets set in `HarunRRayhan/crontinel-app` → Settings → Secrets
@@ -200,7 +200,7 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 - [ ] `P1` Launch Reddit post drafted (no em dashes; reviewed by user before posting per memory rules)
 
 ### Show HN
-- [ ] `P1` Show HN draft written: "Show HN: Crontinel — Laravel cron job monitoring with Composer package and MCP server"
+- [ ] `P1` Show HN draft written: "Show HN: Crontinel  -  Laravel cron job monitoring with Composer package and MCP server"
 - [ ] `P1` Show HN draft reviewed: explains OSS-vs-SaaS distinction, links to GitHub and landing page, mentions MCP differentiation
 - [ ] `P2` Timed for a weekday morning (US Eastern) for maximum HN visibility
 
@@ -218,14 +218,14 @@ Legend: `P0` = launch blocker | `P1` = launch-week must | `P2` = nice-to-have be
 
 ---
 
-## Summary — P0 Blockers
+## Summary  -  P0 Blockers
 
 These items must be resolved before any public launch:
 
-1. `crontinel/php` released to Packagist with a stable tag — `composer require crontinel/laravel` will fail without it
-2. Hetzner VPS provisioned + `app.crontinel.com` DNS record added — the app is unreachable without it
+1. `crontinel/php` released to Packagist with a stable tag  -  `composer require crontinel/laravel` will fail without it
+2. Hetzner VPS provisioned + `app.crontinel.com` DNS record added  -  the app is unreachable without it
 3. Waitlist form stops silently succeeding when Resend is not configured
-4. Registration gate removed — all CTAs link to `/register`, not `/#waitlist`
-5. Timezone select in onboarding replaced with the full PHP list — wrong timezone = false positive alerts from day one
-6. Docs deployed to `docs.crontinel.com` — the domain does not resolve yet
-7. Stripe Price IDs wired into `config/cashier.php` — billing cannot process without them
+4. Registration gate removed  -  all CTAs link to `/register`, not `/#waitlist`
+5. Timezone select in onboarding replaced with the full PHP list  -  wrong timezone = false positive alerts from day one
+6. Docs deployed to `docs.crontinel.com`  -  the domain does not resolve yet
+7. Stripe Price IDs wired into `config/cashier.php`  -  billing cannot process without them

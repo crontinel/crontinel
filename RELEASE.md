@@ -4,15 +4,15 @@
 
 | Package | Repo | Packagist/npm name | Latest tag |
 |---|---|---|---|
-| `crontinel/php` | `crontinel/php` | `crontinel/php` | _(none — never released)_ |
+| `crontinel/php` | `crontinel/php` | `crontinel/php` | _(none  -  never released)_ |
 | `crontinel/laravel` | `crontinel/crontinel` (local: `oss/`) | `crontinel/laravel` | `v0.2.0` |
-| `@crontinel/mcp-server` | `crontinel/mcp-server` | `@crontinel/mcp-server` | _(none — never published)_ |
+| `@crontinel/mcp-server` | `crontinel/mcp-server` | `@crontinel/mcp-server` | _(none  -  never published)_ |
 
 ---
 
 ## One-Time Setup (do before first release of each package)
 
-### Packagist — `crontinel/php`
+### Packagist  -  `crontinel/php`
 - [ ] Go to packagist.org → Submit → enter `https://github.com/crontinel/php`
 - [ ] On the package page: API Tokens → copy the token
 - [ ] In GitHub `crontinel/php` → Settings → Webhooks → Add webhook:
@@ -20,12 +20,12 @@
   - Secret: the Packagist API token
   - Events: "Just the push event"
 
-### Packagist — `crontinel/laravel`
+### Packagist  -  `crontinel/laravel`
 - [ ] Verify the package is already registered at `https://packagist.org/packages/crontinel/laravel`
 - [ ] Confirm the GitHub webhook in `crontinel/crontinel` is pointing to the correct Packagist user/token after the org move (Settings → Webhooks)
 - [ ] Confirm `support.source` and `support.issues` in `oss/composer.json` point to `github.com/crontinel/crontinel` (already done)
 
-### npm — `@crontinel/mcp-server`
+### npm  -  `@crontinel/mcp-server`
 - [ ] Ensure the `@crontinel` npm org exists and your account is a member: `npm org ls crontinel`
 - [ ] Log in: `npm login`
 - [ ] First publish (see release flow below)
@@ -36,7 +36,7 @@
 
 ### 1. `crontinel/php`
 
-> No `version` field in `composer.json` — Packagist derives version from git tags. Keep it that way.
+> No `version` field in `composer.json`  -  Packagist derives version from git tags. Keep it that way.
 
 ```bash
 cd /Users/ray/Work/crontinel/php
@@ -116,9 +116,9 @@ git push origin --tags
 
 ## Repo / Org Checks After GitHub Org Move
 
-- [ ] `crontinel/php` — webhook to Packagist installed (see one-time setup above)
-- [ ] `crontinel/crontinel` — existing Packagist webhook still valid (token not rotated, URL correct)
-- [ ] `crontinel/mcp-server` — no webhook needed for npm; publish is manual
+- [ ] `crontinel/php`  -  webhook to Packagist installed (see one-time setup above)
+- [ ] `crontinel/crontinel`  -  existing Packagist webhook still valid (token not rotated, URL correct)
+- [ ] `crontinel/mcp-server`  -  no webhook needed for npm; publish is manual
 - [ ] All three repos are public in the `crontinel` GitHub org
 - [ ] `support.source` URLs in both `composer.json` files resolve correctly
 

@@ -6,7 +6,7 @@ Date: 2026-04-08
 
 ## 1. Trust-Gap Report
 
-### P0 — Launch Blockers
+### P0  -  Launch Blockers
 
 | # | Gap | Where | Notes |
 |---|-----|-------|-------|
@@ -17,7 +17,7 @@ Date: 2026-04-08
 | 5 | **Docs have no verification screenshots** | docs quick-start | After "Visit /crontinel in your browser" there is no image showing what the user should see. No confirmation they succeeded. |
 | 6 | **Quick-start missing scheduler prerequisite** | docs/quick-start.md | Cron monitoring depends on `schedule:run` being in crontab. Quick-start never mentions this. User installs, sees empty cron section, thinks it is broken. |
 
-### P1 — Launch-Week Musts
+### P1  -  Launch-Week Musts
 
 | # | Gap | Where | Notes |
 |---|-----|-------|-------|
@@ -30,7 +30,7 @@ Date: 2026-04-08
 | 13 | **Quick-start has no "not using Horizon" note** | docs/quick-start.md | Users without Horizon will see an empty Horizon section and think something broke. The OSS README has this note; the docs do not. |
 | 14 | **php and mcp-server repos have no CI workflows** | .github/workflows/ | No automated tests visible to the public. CI badges cannot be shown because CI does not exist. |
 
-### P2 — Pre-Launch Nice-to-Haves
+### P2  -  Pre-Launch Nice-to-Haves
 
 | # | Gap | Where | Notes |
 |---|-----|-------|-------|
