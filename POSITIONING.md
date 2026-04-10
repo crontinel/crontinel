@@ -6,7 +6,7 @@ Last updated: 2026-04-10
 
 ## 1. One-Line Positioning
 
-Crontinel is cloud cron monitoring for everyone. Know when your cron jobs stop running, before your customers do.
+Crontinel is cron, scheduler, background job, and health monitoring for everyone. Know when your jobs stop running, before your customers do.
 
 ---
 
@@ -18,7 +18,7 @@ Crontinel is cloud cron monitoring for everyone. Know when your cron jobs stop r
 
 ## 3. Elevator Pitch
 
-Your uptime monitor shows green. Your cron jobs have been failing since Tuesday. Crontinel monitors what generic tools miss: whether your scheduled tasks actually ran, whether queues are backed up, whether workers are alive. Alerts in minutes, not days.
+Your uptime monitor shows green. Your cron jobs have been failing since Tuesday. Crontinel monitors what generic tools miss: whether your scheduled tasks ran, whether schedulers are healthy, whether health checks are passing. Alerts in minutes, not days.
 
 ---
 
@@ -59,4 +59,4 @@ Generic uptime tools check if a URL returns 200. Crontinel checks if your jobs a
 
 ## 8. Keywords
 
-cron monitoring, job monitoring, background job monitoring, scheduled task monitoring, worker health, queue monitoring, cron job alerts, cloud monitoring, SaaS monitoring, DevOps tools
+cron monitoring, scheduler monitoring, background job monitoring, health monitoring, worker health, queue monitoring, job monitoring alerts, cloud monitoring, SaaS monitoring, DevOps tools, scheduled task monitoring
