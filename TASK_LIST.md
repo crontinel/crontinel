@@ -3,7 +3,7 @@
 ## Landing Page
 
 ### SEO & Metadata
-- [ ] Set GA4 env var in CF Pages dashboard (PUBLIC_GA_MEASUREMENT_ID = G-KJDPL4R7LZ) — needs CF dashboard access
+- [x] Set GA4 env var in wrangler.json vars (PUBLIC_GA_MEASUREMENT_ID = G-KJDPL4R7LZ) — committed to wrangler.json
 - [x] SEO: add meta descriptions to all pages — Base.astro handles all pages
 - [x] Add OG tags to all major pages — Base.astro has og:title, og:description, og:image, og:url, og:site_name + Twitter cards
 - [x] Add JSON-LD structured data to key pages — Base.astro has Organization+WebSite; blog posts have Article schema
@@ -153,3 +153,36 @@
 - npm: publish @crontinel/mcp-server (needs npm org + credentials)
 - DNS: set up app.crontinel.com, docs.crontinel.com, status.crontinel.com
 - Packagist: install GitHub webhooks for auto-update on push
+
+---
+
+## SEO (Long-term, start slow)
+
+### Foundation
+- [ ] Set up Google Search Console for crontinel.com
+- [ ] Verify site ownership in GSC
+- [ ] Submit sitemap.xml to GSC
+- [ ] Set up Bing Webmaster Tools
+- [ ] Check canonical URLs on all pages (Base.astro)
+- [ ] Verify all pages have meta descriptions
+
+### Content (blog, start with 2 cornerstone articles)
+- [ ] Write: "What is Cron Monitoring and Why Laravel Developers Need It"
+- [ ] Write: "Laravel Queue Monitoring: Catch Failures Before Your Users Do"
+- [ ] Write: "How to Monitor Horizon Jobs in Production"
+- [ ] Add blog posts to content collection
+- [ ] Ensure each post has proper OG tags + Twitter cards
+- [ ] Add FAQ schema to comparison/vs pages
+
+### Technical SEO
+- [ ] Fix any GSC coverage errors (404s, soft 404s)
+- [ ] Check Core Web Vitals in GSC (LCP, CLS, INP)
+- [ ] Ensure hreflang is correct if multilingual
+- [ ] Check XML sitemap is valid and complete
+- [ ] Verify robots.txt allows all important pages
+
+### Off-page SEO (start 1/month)
+- [ ] Submit to Laravel package directories (laravel-news.com, Packalyst)
+- [ ] Submit to dev tool directories (toolblip, tinytools, etc.)
+- [ ] Post in r/laravel (soft, helpful, not promo)
+- [ ] Build 1-2 contextual backlinks per month via genuine outreach
