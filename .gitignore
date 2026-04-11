@@ -4,3 +4,10 @@ app/
 node_modules/
 .env
 .env.local
+
+# Untracked project subdirectories
+docs/
+hub/
+mcp-server/
+php/
+memory/
