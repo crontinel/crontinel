@@ -18,6 +18,7 @@ Crontinel is available across your entire stack:
 | [`crontinel/python`](https://github.com/crontinel/python) | Python SDK | ![CI](https://img.shields.io/badge/CI-passing-brightgreen) |
 | [`crontinel/go`](https://github.com/crontinel/go) | Go SDK | ![CI](https://img.shields.io/badge/CI-passing-brightgreen) |
 | [`crontinel/rust`](https://github.com/crontinel/rust) | Rust SDK | ![CI](https://img.shields.io/badge/CI-passing-brightgreen) |
+| [`crontinel/ruby`](https://github.com/crontinel/ruby) | Ruby SDK | ![CI](https://img.shields.io/badge/CI-passing-brightgreen) |
 | [`crontinel/cli`](https://github.com/crontinel/cli) | CLI tool | ![CI](https://img.shields.io/badge/CI-passing-brightgreen) |
 | [`crontinel/mcp-server`](https://github.com/crontinel/mcp-server) | MCP server | ![CI](https://img.shields.io/badge/CI-passing-brightgreen) |
 
